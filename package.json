@@ -1,0 +1,33 @@
+{
+  "name": "prelude",
+  "version": "1.0.0",
+  "description": "Display inspiring messages when opening your terminal",
+  "main": "index.js",
+  "bin": {
+    "prelude": "./bin/prelude.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "prelude",
+    "terminal",
+    "motivation",
+    "inspiration",
+    "cli",
+    "motd",
+    "startup",
+    "message"
+  ],
+  "author": "Prelude Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/prelude.git"
+  },
+  "homepage": "https://github.com/username/prelude#readme",
+  "bugs": {
+    "url": "https://github.com/username/prelude/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
