@@ -63,7 +63,7 @@ switch (command) {
   case '--help':
   case '-h':
     console.log(`
-Prelude - Personalized inspiring messages for your terminal
+CLI Prelude - Personalized inspiring messages for your terminal
 
 Usage:
   prelude                            Display your message

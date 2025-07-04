@@ -1,13 +1,14 @@
 {
-  "name": "prelude",
+  "name": "cli-prelude",
   "version": "1.0.0",
-  "description": "Display inspiring messages when opening your terminal",
+  "description": "CLI Prelude - Display inspiring messages when opening your terminal",
   "main": "index.js",
   "bin": {
     "prelude": "./bin/prelude.js"
   },
   "scripts": {},
   "keywords": [
+    "cli-prelude",
     "prelude",
     "terminal",
     "motivation",
@@ -17,14 +18,14 @@
     "startup",
     "message"
   ],
-  "author": "Prelude Contributors",
+  "author": "CLI Prelude Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/prelude.git"
+    "url": "https://github.com/incrediblecrab/cli-prelude.git"
   },
-  "homepage": "https://github.com/username/prelude#readme",
+  "homepage": "https://mlot.ai/",
   "bugs": {
-    "url": "https://github.com/username/prelude/issues"
+    "url": "https://github.com/incrediblecrab/cli-prelude/issues"
   },
   "license": "MIT",
   "dependencies": {

@@ -1,4 +1,4 @@
-# Prelude
+# CLI Prelude
 
 Display inspiring messages when opening your terminal. A simple, elegant way to start your coding sessions with intention.
 
@@ -15,7 +15,7 @@ Display inspiring messages when opening your terminal. A simple, elegant way to 
 ## Installation
 
 ```bash
-npm install -g prelude
+npm install -g cli-prelude
 ```
 
 ## Quick Start
@@ -106,9 +106,9 @@ Configuration is stored in `~/.prelude/config.json`:
 
 ## Philosophy
 
-Prelude is about starting your terminal sessions with intention. Whether you use the default "Live where your feet are" or set your own message, it's a moment to center yourself before diving into code.
+CLI Prelude is about starting your terminal sessions with intention. Whether you use the default "Live where your feet are" or set your own message, it's a moment to center yourself before diving into code.
 
-The name "prelude" reflects its purpose - a brief introduction before your main work begins.
+The name "CLI Prelude" reflects its purpose - a brief introduction before your main work begins.
 
 ## Compatibility
 

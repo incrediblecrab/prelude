@@ -133,7 +133,7 @@ function setEnabled(enabled) {
   const config = loadConfig();
   config.enabled = enabled;
   if (saveConfig(config)) {
-    console.log(chalk.green(`Prelude messages ${enabled ? 'enabled' : 'disabled'} successfully!`));
+    console.log(chalk.green(`CLI Prelude messages ${enabled ? 'enabled' : 'disabled'} successfully!`));
   }
 }
 
@@ -148,12 +148,19 @@ function setCustomMessage(message) {
   }
 }
 
-// Reset to default message
+// Reset to complete default configuration
 function resetToDefault() {
-  const config = loadConfig();
-  config.customMessage = '';
-  if (saveConfig(config)) {
-    console.log(chalk.green('Reset to default message!'));
+  const defaultConfig = {
+    enabled: true,
+    colorful: true,
+    border: true,
+    customMessage: '',
+    borderColor: 'default',
+    textColor: 'default'
+  };
+  
+  if (saveConfig(defaultConfig)) {
+    console.log(chalk.green('Reset to complete defaults!'));
     console.log(chalk.gray('Preview:'));
     displayMessage();
   }
