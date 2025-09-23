@@ -1,6 +1,11 @@
 # CLI Prelude
 
+![npm version](https://img.shields.io/npm/v/cli-prelude)
+![MLoT](https://img.shields.io/badge/MLoT-ai-blue)
+
 Display inspiring messages when opening your terminal. A simple, elegant way to start your coding sessions with intention.
+
+![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/prelude.gif)
 
 ## Features
 
@@ -116,6 +121,20 @@ The name "CLI Prelude" reflects its purpose - a brief introduction before your m
 - ✅ **Shell agnostic** - Works with bash, zsh, fish, PowerShell, cmd
 - ✅ **Theme adaptive** - Respects your terminal's color scheme
 - ✅ **No interference** - Runs cleanly without affecting your workflow
+
+## License
+
+## Resources
+
+- 📺 [Watch Demo Video](https://youtu.be/BH22EUGs9qg)
+- 🌐 [Visit MLoT Page](https://mlot.ai/cli-prelude/)
+- 📦 [View on GitHub](https://github.com/incrediblecrab/prelude)
+- 🔒 [Privacy Policy](https://mlot.ai/privacy)
+
+## Publisher
+
+**Max's Lab of Things**
+Visit [mlot.ai](https://mlot.ai/)
 
 ## License
 
