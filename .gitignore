@@ -19,3 +19,10 @@ ehthumbs.db
 desktop.ini
 .env.local
 .env.*.local
+
+# --- project-specific (auto-added 2026-08-04) ---
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+.npm/
