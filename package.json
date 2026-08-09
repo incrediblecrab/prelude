@@ -4,7 +4,7 @@
   "description": "CLI Prelude - Display inspiring messages when opening your terminal",
   "main": "index.js",
   "bin": {
-    "prelude": "./bin/prelude.js"
+    "prelude": "bin/prelude.js"
   },
   "scripts": {},
   "keywords": [
