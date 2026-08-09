@@ -122,13 +122,10 @@ The name "CLI Prelude" reflects its purpose - a brief introduction before your m
 - ✅ **Theme adaptive** - Respects your terminal's color scheme
 - ✅ **No interference** - Runs cleanly without affecting your workflow
 
-## License
-
 ## Resources
 
 - 📺 [Watch Demo Video](https://youtu.be/BH22EUGs9qg)
 - 🌐 [Visit MLoT Page](https://mlot.ai/cli-prelude/)
-- 📦 [View on GitHub](https://github.com/incrediblecrab/prelude)
 - 🔒 [Privacy Policy](https://mlot.ai/privacy)
 
 ## Publisher
@@ -138,4 +135,4 @@ Visit [mlot.ai](https://mlot.ai/)
 
 ## License
 
-MIT - see [LICENSE](LICENSE) file for details.
+MIT
