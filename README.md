@@ -5,7 +5,7 @@
 
 Display inspiring messages when opening your terminal. A simple, elegant way to start your coding sessions with intention.
 
-![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/gifs/prelude.gif)
+![Demo](https://raw.githubusercontent.com/incrediblecrab/mlot-developer-media/main/gifs/prelude.gif)
 
 ## Features
 
