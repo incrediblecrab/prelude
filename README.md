@@ -1,102 +1,55 @@
-# CLI Prelude
+# prelude
 
-![npm version](https://img.shields.io/npm/v/cli-prelude)
-![MLoT](https://img.shields.io/badge/MLoT-ai-blue)
+![npm version](https://img.shields.io/npm/v/cli-prelude) ![MLoT](https://img.shields.io/badge/MLoT-ai-blue)
 
-Display inspiring messages when opening your terminal. A simple, elegant way to start your coding sessions with intention.
+prelude is the GitHub repository for CLI Prelude, a Node.js command that prints a configurable message for terminal startup scripts. It is published on npm as [`cli-prelude`](https://www.npmjs.com/package/cli-prelude) version 1.5.1, matching this repository.
 
 ![Demo](https://raw.githubusercontent.com/incrediblecrab/mlot-developer-media/main/gifs/prelude.gif)
 
-## Features
+**Objective:** provide a small terminal message tool with a default prompt, configurable text and configurable border and text colors.
 
-- 🎯 **Single default message** - "Live where your feet are" 
-- ✨ **Customizable** - Set your own personal message
-- 🎨 **Beautiful display** - Colorful output with Unicode box borders
-- 🌈 **Color support** - Named colors and hex values
-- 🎭 **Theme adaptive** - Uses your terminal's default colors by default
-- ⚡ **Lightweight** - Minimal dependencies, fast startup
-- 🔧 **Simple commands** - Easy enable/disable and configuration
+**Inputs:** Node.js, the `prelude` command, and a per-user configuration file at `~/.prelude/config.json`.
 
-## Installation
+**Files:**
 
-```bash
-npm install -g cli-prelude
-```
+- [`bin/`](bin/): the `prelude` executable and command dispatcher
+- [`index.js`](index.js): configuration, rendering and command helpers
+- [`CHANGELOG.md`](CHANGELOG.md): release notes
+- [`package.json`](package.json): npm metadata and the `prelude` bin mapping for the `cli-prelude` package
 
-## Quick Start
+**Try it:** `npm install -g cli-prelude`, then `prelude help`, or run the checked-out copy with `node bin/prelude.js --help`.
 
-Display your message:
-```bash
-prelude
-```
+## CLI reference
 
-## Commands
+Commands verified against `bin/prelude.js`:
 
-```bash
-prelude                    # Display your message
-prelude set "message"      # Set your custom message  
-prelude reset              # Reset to default message
-prelude border <color>     # Set border color
-prelude text <color>       # Set text color
-prelude config             # Show current settings
-prelude enable             # Enable messages on startup
-prelude disable            # Disable messages on startup
-prelude help               # Show help
-```
+- `prelude` displays the configured message when `enabled` is true.
+- `prelude set "message"` saves a custom message and shows a preview.
+- `prelude reset` restores the default configuration.
+- `prelude border <color>` sets the border color.
+- `prelude text <color>` sets the text color.
+- `prelude config` prints the current configuration.
+- `prelude enable` and `prelude disable` toggle display without changing the saved message.
+- `prelude help`, `prelude --help` and `prelude -h` print usage.
 
-## Colors
-
-**Named colors:** `cyan`, `green`, `yellow`, `magenta`, `blue`, `red`, `white`, `gray`, `random`, `default`
-
-**Hex colors:** `#ff0000`, `#00ff00`, `#0000ff`, etc.
-
-**Default:** Uses your terminal's theme colors (recommended)
+Border colors are `cyan`, `green`, `yellow`, `magenta`, `blue`, `red`, `white`, `random`, `default` or a hex color such as `#ff0000`. Text colors are `cyan`, `green`, `yellow`, `magenta`, `blue`, `red`, `white`, `gray`, `default` or a hex color.
 
 ## Examples
 
 ```bash
-# Set a custom message
 prelude set "Code with purpose"
-
-# Use theme colors (adapts to light/dark themes)
 prelude border default
 prelude text default
-
-# Use specific colors
 prelude border cyan
 prelude text white
-
-# Use hex colors
 prelude border "#ff6b6b"
 prelude text "#4ecdc4"
-
-# Reset everything
 prelude reset
-```
-
-## Setup Automatic Display
-
-### macOS / Linux (Zsh)
-Add to your `~/.zshrc`:
-```bash
-prelude
-```
-
-### macOS / Linux (Bash)
-Add to your `~/.bashrc` or `~/.bash_profile`:
-```bash
-prelude
-```
-
-### Windows (PowerShell)
-Add to your PowerShell profile:
-```powershell
-prelude
 ```
 
 ## Configuration
 
-Configuration is stored in `~/.prelude/config.json`:
+The command stores configuration in `~/.prelude/config.json` and creates `~/.prelude/` when the package is loaded. The default message is `Live where your feet are`, with terminal-default border and text colors.
 
 ```json
 {
@@ -109,30 +62,28 @@ Configuration is stored in `~/.prelude/config.json`:
 }
 ```
 
-## Philosophy
+## Startup setup
 
-CLI Prelude is about starting your terminal sessions with intention. Whether you use the default "Live where your feet are" or set your own message, it's a moment to center yourself before diving into code.
+Add `prelude` to a shell startup file when you want it to appear automatically. The repository documents simple startup use for Zsh, Bash and PowerShell by adding the command to the appropriate profile file; the code itself does not edit shell profiles.
 
-The name "CLI Prelude" reflects its purpose - a brief introduction before your main work begins.
+## Development
 
-## Compatibility
+```bash
+npm install
+node bin/prelude.js help
+```
 
-- ✅ **Cross-platform** - Works on macOS, Linux, and Windows
-- ✅ **Shell agnostic** - Works with bash, zsh, fish, PowerShell, cmd
-- ✅ **Theme adaptive** - Respects your terminal's color scheme
-- ✅ **No interference** - Runs cleanly without affecting your workflow
+This package has no configured npm scripts.
 
-## Resources
+## Links
 
-- 📺 [Watch Demo Video](https://youtu.be/BH22EUGs9qg)
-- 🌐 [Visit MLoT Page](https://mlot.ai/cli-prelude/)
-- 🔒 [Privacy Policy](https://mlot.ai/privacy)
-
-## Publisher
-
-**Max's Lab of Things**
-Visit [mlot.ai](https://mlot.ai/)
+- [npm package](https://www.npmjs.com/package/cli-prelude)
+- [Demo video](https://youtu.be/BH22EUGs9qg)
+- [MLoT product page](https://mlot.ai/cli-prelude/)
+- [Privacy policy](https://mlot.ai/privacy)
+- [Issues](https://github.com/incrediblecrab/prelude/issues)
+- Publisher: [Max's Lab of Things](https://mlot.ai/)
 
 ## License
 
-MIT
+MIT. See [`LICENSE`](LICENSE).
