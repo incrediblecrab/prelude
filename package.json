@@ -6,6 +6,11 @@
   "bin": {
     "prelude": "bin/prelude.js"
   },
+  "files": [
+    "index.js",
+    "bin/",
+    "CHANGELOG.md"
+  ],
   "scripts": {},
   "keywords": [
     "cli-prelude",
