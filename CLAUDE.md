@@ -6,7 +6,7 @@ prelude is CLI Prelude, a small Node.js command that prints a bordered, colored 
 
 ## Commands
 
-There are no npm scripts, tests or build step; the only dependency is `chalk`. After `npm install`, run the checked-out copy directly:
+There are no npm scripts, tests or build step; the only dependency is `chalk`. After `pnpm install`, run the checked-out copy directly:
 
 ```bash
 node bin/prelude.js help

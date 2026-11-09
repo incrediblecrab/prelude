@@ -69,7 +69,7 @@ Add `prelude` to a shell startup file when you want it to appear automatically. 
 ## Development
 
 ```bash
-npm install
+pnpm install
 node bin/prelude.js help
 ```
 
